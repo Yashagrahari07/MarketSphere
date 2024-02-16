@@ -30,14 +30,14 @@ const NavbarBottom = () => {
   };
 
   return (
-    <div className='w-full bg-[#F5F5F3] relative'>
+    <div className='w-full bg-[#F5F5F3] relative shadow'>
       <div className='max-w-container mx-auto'>
         <div className='flex flex-col items-center lg:flex-row justify-between w-full px-10 pb-4 lg:pb-0 h-full lg:h-24 relative'>
           <div className='flex h-14 cursor-pointer items-center gap-2 text-black' onClick={toggleDropdown}>
             <FaGripLines size='1.5rem'/>
             <button className='text-[14px] font-normal'>Shop by Category</button>
             {showDropdown && (
-            <ul className="absolute top-12 z-50 w-auto text-white p-4 pb-6 rounded-md border border-gray-300 mt-2 bg-black">
+            <ul className="absolute top-12 z-20 w-auto text-white p-4 pb-6 rounded-md border border-gray-300 mt-2 bg-black">
               {categories.map((category) => (
                 <li
                   key={category}
@@ -59,7 +59,7 @@ const NavbarBottom = () => {
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
             <div className="flex"  onClick={toggleUserDropdown}><FaUser /><IoMdArrowDropdown /></div>
             {showUserDropdown && (
-              <ul className='absolute top-6 right-0 z-50 w-auto text-white p-4 pb-6 rounded-md border border-gray-300 mt-2 bg-black'>
+              <ul className='absolute top-6 right-0 z-20 w-auto text-white p-4 pb-6 rounded-md border border-gray-300 mt-2 bg-black'>
                 <li className='text-white px-4 py-2 hover:bg-red-500 duration-300 cursor-pointer text-sm'>Login</li>
                 <li className='text-white px-4 py-2 hover:bg-red-500 duration-300 cursor-pointer text-sm'>Signup</li>
               </ul>

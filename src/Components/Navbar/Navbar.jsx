@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='fixed flex justify-between h-20 py-2 px-10 shadow-md'>
+      <div className='sticky top-0 z-30 flex justify-between h-20 py-2 px-10 shadow-md bg-white'>
         <div className='flex items-center'>     
           <img src={logo} alt="MarketSphere" />
         </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
 
         {dropdown && (
-          <div className="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-70">
+          <div className="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-70 z-10">
             <div className="flex justify-end p-4">
               <button onClick={toogleDropdown} className="text-white focus:outline-none"><IoClose size='3rem'/></button>
             </div>
