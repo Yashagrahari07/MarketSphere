@@ -3,6 +3,7 @@ import { useState } from "react"
 import logo from '../../assets/logo.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import NavbarBottom from "./NavbarBottom"
 
 const Navbar = () => {
   const [menu,setMenu]=useState("home");
@@ -15,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='flex justify-between h-20 py-2 px-10 shadow-md'>
+      <div className='fixed flex justify-between h-20 py-2 px-10 shadow-md'>
         <div className='flex items-center'>     
           <img src={logo} alt="MarketSphere" />
         </div>
@@ -45,6 +46,7 @@ const Navbar = () => {
         )}
       </div>
 
+      <NavbarBottom/>
     </>
   )
 };
