@@ -30,7 +30,7 @@ const NavbarBottom = () => {
   };
 
   return (
-    <div className='sticky w-full bg-[#F5F5F3] shadow'>
+    <div className='sticky z-20 w-full bg-[#F5F5F3] shadow'>
       <div className='max-w-container mx-auto'>
         <div className='flex flex-col items-center lg:flex-row justify-between w-full px-10 pb-4 lg:pb-0 h-full lg:h-24 relative'>
           <div className='flex h-12 cursor-pointer items-center gap-2 text-black lg:h-14'>
